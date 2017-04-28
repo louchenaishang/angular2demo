@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+
 import {Hero} from '../hero/hero.model';
 import {Todo} from "../todo/todo.model";
 import {HeroService} from "../hero/hero.service";
@@ -28,13 +29,15 @@ export class FirstComponentComponent implements OnInit {
 
   submitted = false;
 
-  hero = {};
+  hero:Hero = null;
 
-  other = new Hero('2', 'aaa');
+  other:Hero= new Hero('2', 'aaa');
 
   heroes: Hero[] = [];
 
   todoItems: Todo[];
+
+  date:string='';
 
 
 
