@@ -1,13 +1,21 @@
 import {Component, OnInit} from '@angular/core';
-import {Hero} from '../class/hero';
+import {Hero} from '../hero/hero.model';
+import {HeroService} from "../hero/hero.service";
 
 @Component({
   selector: 'app-first-component',
   templateUrl: './first-component.component.html',
-  styleUrls: ['./first-component.component.css']
+  styleUrls: ['./first-component.component.css'],
+  providers: [ HeroService ]
 })
 
-export class FirstComponentComponent {
+export class FirstComponentComponent implements OnInit{
+
+  constructor(private heroService: HeroService) {}
+
+  ngOnInit() {
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+  }
 
   submitted=false;
 
@@ -15,11 +23,7 @@ export class FirstComponentComponent {
 
   other = new Hero('2','aaa');
 
-  heroes = [new Hero('1', 'louchen1'),new Hero('1', 'louchen2'),new Hero('1', 'louchen3')];
-
-
-  get heroJson() { return JSON.stringify(this.hero);}
-  get otherJson() { return JSON.stringify(this.other);}
+  heroes: Hero[] = [];
 
 
   onSubmit() {

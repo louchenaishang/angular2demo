@@ -2,10 +2,13 @@
   first-component content
 </div>
 <div>
-  here is heroJson:{{ heroJson }}
+  {{ heroes | json }}
 </div>
 <div>
-  here is otherJson:{{ otherJson }}
+  here is heroJson:{{ hero | json }}
+</div>
+<div>
+  here is otherJson:{{ other | json }}
 </div>
 
 <div class="container" [hidden]="submitted">
