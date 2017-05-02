@@ -20,7 +20,7 @@ export class FirstComponentComponent implements OnInit {
   ngOnInit() {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
 
-    this.todoService.loadTodoList().then(todoItems => {
+    this.todoService.loadTodoListWithHeader().then(todoItems => {
       console.log(todoItems)
       this.todoItems = todoItems;
     });
