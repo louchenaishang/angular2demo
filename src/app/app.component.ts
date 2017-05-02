@@ -25,6 +25,13 @@ export class AppComponent {
     this._cookieService.put(key, value)
   }
 
-  envName = environment.envName;
+  closeAlert(ngbAalert){
+    console.log(ngbAalert)
+    ngbAalert.show = false
+
+  }
+
+  displayEnvName = true
+  envName = environment.envName
 
 }
