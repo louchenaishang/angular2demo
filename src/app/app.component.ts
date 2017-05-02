@@ -11,6 +11,7 @@ import {environment} from '../environments/environment';
 
 export class AppComponent {
 
+
   constructor(private _cookieService: CookieService) {
   }
 
