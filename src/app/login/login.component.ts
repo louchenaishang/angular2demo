@@ -8,7 +8,7 @@ import {LoginService} from "./login.service";
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [LoginService]
+  providers: []
 })
 export class LoginComponent implements OnInit {
 
@@ -24,16 +24,13 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.loginService.login().then(items => {
       for (let item of items) {
-        //console.log(item);
         if (this.login.username === item.username && this.login.password === item.password) {
           sessionStorage.setItem('user', JSON.stringify(item));
           break;
         }
       }
 
-      let user = sessionStorage.getItem('user');
-      if (user) {
-        console.log('登录成功');
+      if (this.loginService.isLogined()) {
         this.errorText = '';
         this.router.navigate(['']);
       } else {

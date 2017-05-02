@@ -18,6 +18,11 @@ export class LoginService {
       .catch(this.handleError);
   }
 
+  public isLogined():boolean{
+    let user = sessionStorage.getItem('user');
+    return user?true:false;
+  }
+
 
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only
