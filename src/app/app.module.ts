@@ -13,13 +13,15 @@ import { HttpService } from './http/http.service'
 
 import {FirstComponentComponent} from './first-component/first-component.component';
 import {IndexComponent} from './index/index.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
-    IndexComponent
+    IndexComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
