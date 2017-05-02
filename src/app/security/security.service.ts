@@ -1,3 +1,7 @@
+//see http://www.tuicool.com/articles/b2IZRfv
+//see http://www.tuicool.com/articles/aqMjErq
+//see http://www.cnblogs.com/keatkeat/p/5810987.html
+
 import {Injectable} from '@angular/core';
 import {CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute, Router} from "@angular/router";
 import {Observable} from "rxjs";

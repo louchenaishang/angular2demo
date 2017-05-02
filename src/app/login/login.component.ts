@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.loginService.login().then(items => {
       for (let item of items) {
         if (this.login.username === item.username && this.login.password === item.password) {
-          sessionStorage.setItem('user', JSON.stringify(item));
+          this.loginService.setCurrentUser(item);
           break;
         }
       }

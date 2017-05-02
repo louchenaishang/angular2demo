@@ -18,9 +18,24 @@ export class LoginService {
       .catch(this.handleError);
   }
 
-  public isLogined():boolean{
+  public isLogined(): boolean {
     let user = sessionStorage.getItem('user');
-    return user?true:false;
+    return user ? true : false;
+  }
+
+  public setCurrentUser(login: Login): void {
+    if (login != null) {
+      sessionStorage.setItem('user', JSON.stringify(login));
+    }
+  }
+
+  public getCurrentUser(): Login {
+    let user = sessionStorage.getItem('user');
+    if (user != null) {
+      return JSON.parse(user);
+    } else {
+      return null;
+    }
   }
 
 
