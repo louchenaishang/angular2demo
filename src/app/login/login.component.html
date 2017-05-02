@@ -1,6 +1,10 @@
 <div class="container">
 
-  <form #loginForm="ngForm">
+
+
+  <form class="card-box" #loginForm="ngForm">
+
+    <div class="title">系统登录</div>
 
     <ngb-alert [dismissible]="false" type="danger" *ngIf="errorText!=''">
       {{ errorText }}
@@ -9,25 +13,26 @@
     <div class="form-group">
       <label class="sr-only" for="username">username</label>
       <input type="text" class="form-control" id="username" name="username" [(ngModel)]="login.username" required
-             placeholder="username">
+             placeholder="请输入用户名">
     </div>
 
     <div class="form-group">
       <label class="sr-only" for="password">password</label>
       <input type="password" class="form-control" id="password" name="password" [(ngModel)]="login.password" required
-             placeholder="password">
+             placeholder="请输入密码">
     </div>
 
     <div class="row">
       <div class="col-sm-12">
         <button type="button" class="btn btn-primary w-100"
                 [disabled]="!loginForm.form.valid"
-                (click)="onSubmit()">login
+                (click)="onSubmit()">登录
         </button>
       </div>
     </div>
 
   </form>
+
 
 </div>
 

@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
         this.errorText = '';
         this.router.navigate(['']);
       } else {
-        this.errorText = 'username or password is invalid';
+        this.errorText = '用户名或者密码错误';
       }
 
     });
