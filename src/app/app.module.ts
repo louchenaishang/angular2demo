@@ -8,6 +8,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {AppComponent} from './app.component';
 import {routes} from './app.routes';
 
+import { CookieService } from 'angular2-cookie/services/cookies.service';
+
 import {FirstComponentComponent} from './first-component/first-component.component';
 import {IndexComponent} from './index/index.component';
 
@@ -25,7 +27,7 @@ import {IndexComponent} from './index/index.component';
     RouterModule.forRoot(routes),
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
