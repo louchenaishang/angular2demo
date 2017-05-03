@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from "@angular/router";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {Angular2FontAwesomeModule} from 'angular2-font-awesome/angular2-font-awesome';
 
 import {AppComponent} from './app.component';
 import {routes} from './app.routes';
@@ -18,7 +19,6 @@ import {IndexComponent} from './pages/index/index.component';
 import {LoginComponent} from './pages/login/login.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +31,10 @@ import {LoginComponent} from './pages/login/login.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    Angular2FontAwesomeModule
   ],
-  providers: [CookieService, HttpService, SecurityService,LoginService],
+  providers: [CookieService, HttpService, SecurityService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
