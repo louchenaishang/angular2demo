@@ -1,8 +1,8 @@
 <div class="container-fluid">
 
-  <div class="row" *ngIf="displayEnvName">
+  <div class="row row-env" *ngIf="displayEnvName">
     <div class="col-sm-12 padding-lr-none">
-      <ngb-alert [dismissible]="true" (close)="displayEnvName=false;" #envAlert>
+      <ngb-alert type="success" [dismissible]="true" (close)="displayEnvName=false;" #envAlert>
         <strong>环境名称:</strong> {{ envName }}
       </ngb-alert>
     </div>
