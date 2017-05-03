@@ -1,14 +1,16 @@
 import {Injectable} from '@angular/core';
+import {Router} from "@angular/router";
 import {HttpService} from './http.service'
 import 'rxjs/add/operator/toPromise';
 
 
 import {Login} from "../models/login.model";
 
+
 @Injectable()
 export class LoginService {
 
-  constructor(private httpService: HttpService) {
+  constructor(private httpService: HttpService, private router: Router) {
   }
 
   public login(): Promise<Login[]> {
@@ -16,6 +18,11 @@ export class LoginService {
       .toPromise()
       .then(response => response.json() as Login[])
       .catch(this.handleError);
+  }
+
+  public logout(): void {
+    sessionStorage.removeItem('user');
+    this.router.navigate(['login']);
   }
 
   public isLogined(): boolean {

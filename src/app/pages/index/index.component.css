@@ -1,8 +1,86 @@
-body {
-  overflow-x: hidden;
+.h-10{
+  height: 10px;
+}
+
+.h-20{
+  height: 20px;
+}
+
+.h-30{
+  height: 30px;
+}
+
+.h-40{
+  height: 40px;
+}
+
+.h-55{
+  height: 55px;
+}
+
+.h-60{
+  height: 60px;
+}
+
+
+.header{
+  background: #000;
+}
+
+.header-left{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+
+.header-left a {
+  display: block;
+  text-decoration: none;
+  /*color: #999999;*/
+  color: #fff;
+}
+
+.header-left a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-left a:active,
+.header-left li a:focus {
+  text-decoration: none;
+}
+
+.header-right{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 60px;
+  float: right;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.header-right a{
+  padding-left: 5px;
+  float: right;
+  color: #fff;
+}
+
+.header-right a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-right a:active,
+.header-right li a:focus {
+  text-decoration: none;
 }
 
 /* Toggle Styles */
+body {
+  overflow-x: hidden;
+}
 
 #wrapper {
   padding-left: 0;

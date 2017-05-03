@@ -15,4 +15,10 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
   }
 
+  isCollapsedAccount = false;
+
+  logout(){
+    this.loginService.logout();
+  }
+
 }

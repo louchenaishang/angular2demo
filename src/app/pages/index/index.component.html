@@ -1,13 +1,19 @@
+<div class="header padding-lr-none h-55">
+  <div class="header-left">
+    <a href="">
+      Angular4-Admin
+    </a>
+  </div>
+  <div class="header-right">
+    {{ loginService.getCurrentUser().username }} | <a href="#" (click)="logout()">注销</a>
+  </div>
+</div>
+
 <div id="wrapper" class="toggled">
 
   <!-- Sidebar -->
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a href="">
-          Angular4-Admin
-        </a>
-      </li>
       <li>
         <a href="#"><fa name="dashboard"></fa>标题1</a>
       </li>
