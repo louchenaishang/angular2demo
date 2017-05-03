@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-import {HttpService} from '../http/http.service'
+import {HttpService} from './http.service'
 import 'rxjs/add/operator/toPromise';
 
 
-import {Login} from "./login.model";
+import {Login} from "../models/login.model";
 
 @Injectable()
 export class LoginService {

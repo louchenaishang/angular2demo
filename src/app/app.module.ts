@@ -9,13 +9,13 @@ import {AppComponent} from './app.component';
 import {routes} from './app.routes';
 
 import {CookieService} from 'angular2-cookie/services/cookies.service';
-import {HttpService} from './http/http.service';
-import {SecurityService} from './security/security.service';
-import {LoginService} from "./login/login.service";
+import {HttpService} from './services/http.service';
+import {SecurityService} from './services/security.service';
+import {LoginService} from "./services/login.service";
 
-import {FirstComponentComponent} from './first-component/first-component.component';
-import {IndexComponent} from './index/index.component';
-import {LoginComponent} from './login/login.component';
+import {FirstComponentComponent} from './pages/first/first.component';
+import {IndexComponent} from './pages/index/index.component';
+import {LoginComponent} from './pages/login/login.component';
 
 
 

@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
 import {Http} from "@angular/http";
-import {HttpService} from '../http/http.service'
+import {HttpService} from './http.service'
 import 'rxjs/add/operator/toPromise';
 
 
-import {Todo} from "./todo.model";
+import {Todo} from "../models/todo.model";
 
 @Injectable()
 export class TodoService {

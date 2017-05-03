@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 
-import {Hero} from '../hero/hero.model';
-import {Todo} from "../todo/todo.model";
-import {HeroService} from "../hero/hero.service";
-import {TodoService} from "../todo/todo.service";
+import {Hero} from '../../models/hero.model';
+import {Todo} from "../../models/todo.model";
+import {HeroService} from "../../services/hero.service";
+import {TodoService} from "../../services/todo.service";
 
 @Component({
-  selector: 'app-first-component',
-  templateUrl: './first-component.component.html',
-  styleUrls: ['./first-component.component.css'],
+  selector: 'app-first',
+  templateUrl: 'first.component.html',
+  styleUrls: ['first.component.css'],
   providers: [HeroService, TodoService]
 })
 

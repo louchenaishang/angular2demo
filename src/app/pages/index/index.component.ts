@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {LoginService} from "../login/login.service";
+import {LoginService} from "../../services/login.service";
 
 @Component({
   selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css'],
+  templateUrl: 'index.component.html',
+  styleUrls: ['index.component.css'],
   providers: []
 })
 export class IndexComponent implements OnInit {
