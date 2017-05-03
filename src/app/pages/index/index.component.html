@@ -1,15 +1,16 @@
 <div class="header padding-lr-none h-55">
   <div class="header-left">
-    <a href="">
+    <a href="#">
       Angular4-Admin
     </a>
+    <a href="#" style="float: right;" (click)="wrapperToggled=!wrapperToggled"><fa name="toggle-down"></fa></a>
   </div>
   <div class="header-right">
     {{ loginService.getCurrentUser().username }} | <a href="#" (click)="logout()">注销</a>
   </div>
 </div>
 
-<div id="wrapper" class="toggled">
+<div id="wrapper" [ngClass]="{'toggled':wrapperToggled}">
 
   <!-- Sidebar -->
   <div id="sidebar-wrapper">
@@ -49,7 +50,7 @@
             will appear non-collapsed on larger screens. When toggled using the button below, the menu will
             appear/disappear. On small screens, the page content will be pushed off canvas.</p>
           <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" (click)="wrapperToggled=!wrapperToggled">Toggle Menu</a>
         </div>
       </div>
     </div>

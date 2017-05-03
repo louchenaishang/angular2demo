@@ -15,7 +15,7 @@ export class IndexComponent implements OnInit {
   ngOnInit() {
   }
 
-  isCollapsedAccount = false;
+  wrapperToggled = true;
 
   logout(){
     this.loginService.logout();

@@ -32,11 +32,12 @@
   font-size: 18px;
   line-height: 60px;
   padding-left: 20px;
+  color: #fff;
+  width: 250px;
 }
 
 
 .header-left a {
-  display: block;
   text-decoration: none;
   /*color: #999999;*/
   color: #fff;
