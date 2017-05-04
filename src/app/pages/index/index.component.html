@@ -1,12 +1,16 @@
-<div class="header padding-lr-none h-55">
-  <div class="header-left">
-    <a href="#">
+<div class="container-fluid header">
+  <div class="row">
+    <div class="col-sm-2 header-left">
+      <a href="#">
       Angular4-Admin
-    </a>
-    <a href="#" style="float: right;" (click)="wrapperToggled=!wrapperToggled"><fa name="toggle-down"></fa></a>
-  </div>
-  <div class="header-right">
-    {{ loginService.getCurrentUser().username }} | <a href="#" (click)="logout()">注销</a>
+      </a>
+    </div>
+    <div class="col-sm-8 header-middle">
+      <a href="#" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'toggle-on':'toggle-off'" size="lg"></fa></a>
+    </div>
+    <div class="col-sm-2 header-right">
+      {{ loginService.getCurrentUser().username }} | <a href="#" (click)="logout()">注销</a>
+    </div>
   </div>
 </div>
 

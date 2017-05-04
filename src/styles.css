@@ -13,6 +13,14 @@
   border: 1px solid red;
 }
 
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-green {
+  border: 1px solid green;
+}
+
 fa{
   padding-right: 5px;
   margin-left: -20px;
