@@ -4,6 +4,7 @@ import {IndexComponent} from "./pages/index/index.component";
 import {LoginComponent} from "./pages/login/login.component";
 import {FirstComponent} from './pages/first/first.component';
 import {TwoComponent} from "./pages/two/two.component";
+import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.component";
 
 const indexChildRoutes: Routes = [
   {
@@ -27,5 +28,9 @@ export const routes: Routes = [
     path: 'login',
     component: LoginComponent,
     canActivate: [SecurityService]
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];

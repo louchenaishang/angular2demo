@@ -18,6 +18,7 @@ import {FirstComponent} from './pages/first/first.component';
 import {IndexComponent} from './pages/index/index.component';
 import {LoginComponent} from './pages/login/login.component';
 import { TwoComponent } from './pages/two/two.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TwoComponent } from './pages/two/two.component';
     FirstComponent,
     IndexComponent,
     LoginComponent,
-    TwoComponent
+    TwoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
