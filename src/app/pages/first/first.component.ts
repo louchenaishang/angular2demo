@@ -12,7 +12,7 @@ import {TodoService} from "../../services/todo.service";
   providers: [HeroService, TodoService]
 })
 
-export class FirstComponentComponent implements OnInit {
+export class FirstComponent implements OnInit {
 
   constructor(private heroService: HeroService, private todoService: TodoService) {
   }

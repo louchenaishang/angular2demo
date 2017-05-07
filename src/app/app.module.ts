@@ -14,17 +14,19 @@ import {HttpService} from './services/http.service';
 import {SecurityService} from './services/security.service';
 import {LoginService} from "./services/login.service";
 
-import {FirstComponentComponent} from './pages/first/first.component';
+import {FirstComponent} from './pages/first/first.component';
 import {IndexComponent} from './pages/index/index.component';
 import {LoginComponent} from './pages/login/login.component';
+import { TwoComponent } from './pages/two/two.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponentComponent,
+    FirstComponent,
     IndexComponent,
-    LoginComponent
+    LoginComponent,
+    TwoComponent
   ],
   imports: [
     BrowserModule,

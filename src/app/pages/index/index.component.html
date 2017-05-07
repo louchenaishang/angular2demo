@@ -20,10 +20,10 @@
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li>
-        <a href="#"><fa name="dashboard"></fa>标题1</a>
+        <a routerLink="one"><fa name="dashboard"></fa>标题1</a>
       </li>
       <li>
-        <a href="#"><fa name="envelope"></fa>标题2</a>
+        <a  routerLink="two"><fa name="envelope"></fa>标题2</a>
       </li>
       <li>
         <a href="#"><fa name="folder"></fa>标题3</a>
@@ -46,18 +46,19 @@
 
   <!-- Page Content -->
   <div id="page-content-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Simple Sidebar</h1>
-          <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and
-            will appear non-collapsed on larger screens. When toggled using the button below, the menu will
-            appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-          <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" (click)="wrapperToggled=!wrapperToggled">Toggle Menu</a>
-        </div>
-      </div>
-    </div>
+    <!--<div class="container-fluid">-->
+      <!--<div class="row">-->
+        <!--<div class="col-sm-12">-->
+          <!--<h1>Simple Sidebar</h1>-->
+          <!--<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and-->
+            <!--will appear non-collapsed on larger screens. When toggled using the button below, the menu will-->
+            <!--appear/disappear. On small screens, the page content will be pushed off canvas.</p>-->
+          <!--<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>-->
+          <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle" (click)="wrapperToggled=!wrapperToggled">Toggle Menu</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <router-outlet></router-outlet>
   </div>
   <!-- /#page-content-wrapper -->
 
