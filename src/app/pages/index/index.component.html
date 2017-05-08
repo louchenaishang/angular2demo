@@ -6,10 +6,12 @@
       </a>
     </div>
     <div class="col-sm-8 header-middle">
-      <a href="#" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'toggle-on':'toggle-off'" size="lg"></fa></a>
+      <!--<a href="#" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'toggle-on':'toggle-off'" size="lg"></fa></a>-->
+      <a href="#" (click)="wrapperToggled=!wrapperToggled"><fa name="align-justify" size="lg"></fa></a>
+
     </div>
     <div class="col-sm-2 header-right">
-      {{ loginService.getCurrentUser().username }} | <a href="#" (click)="logout()">注销</a>
+      <span class="pr-40">{{ loginService.getCurrentUser().username }} </span> <a href="#" (click)="logout()"><fa name="power-off" size="lg"></fa></a>
     </div>
   </div>
 </div>
