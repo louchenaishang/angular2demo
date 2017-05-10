@@ -19,6 +19,11 @@ import {IndexComponent} from './pages/index/index.component';
 import {LoginComponent} from './pages/login/login.component';
 import { TwoComponent } from './pages/two/two.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ThreeComponent } from './pages/three/three.component';
+import { FourComponent } from './pages/four/four.component';
+import { FiveComponent } from './pages/five/five.component';
+import { SixComponent } from './pages/six/six.component';
+import { SevenComponent } from './pages/seven/seven.component';
 
 
 @NgModule({
@@ -28,7 +33,12 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     IndexComponent,
     LoginComponent,
     TwoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ThreeComponent,
+    FourComponent,
+    FiveComponent,
+    SixComponent,
+    SevenComponent
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,9 @@
   padding-right: 40px;
 }
 
+.hand{
+  cursor:pointer;
+}
 
 .header{
   background: #3c8dbc;

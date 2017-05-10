@@ -21,7 +21,6 @@ export class FirstComponent implements OnInit {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
 
     this.todoService.loadTodoListWithHeader().then(todoItems => {
-      console.log(todoItems)
       this.todoItems = todoItems;
     });
 

@@ -1,36 +1,17 @@
 <div class="container">
-  <form class="form-inline">
-    <div class="form-group">
-      <div class="input-group">
-        <input class="form-control" placeholder="yyyy-mm-dd"
-               name="dp" [(ngModel)]="date" ngbDatepicker #d="ngbDatepicker">
-        <div class="input-group-addon" (click)="d.toggle()">
-          <img src="assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-        </div>
-      </div>
-    </div>
-  </form>
 
-
-  <div>
-    first-component content
-  </div>
-  <div>
-    {{ heroes | json }}
-  </div>
-  <div>
-    here is heroJson:{{ hero | json }}
-  </div>
-  <div>
-    here is otherJson:{{ other | json }}
-  </div>
-  <div>
-    here is todoItems:{{ todoItems | json }}
+  <div class="row">
+    <h1>表单</h1>
   </div>
 
+  <div class="row">
+    <h4>heroJson:{{ hero | json }}</h4>
+  </div>
+  <div class="row">
+    <h4>otherJson:{{ other | json }}</h4>
+  </div>
 
   <div class="container" [hidden]="submitted">
-    <h1>Hero Form</h1>
     <form (ngSubmit)="onSubmit();form.reset();" #form="ngForm">
       <div class="form-group">
         <label for="age">age</label>

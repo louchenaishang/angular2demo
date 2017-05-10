@@ -1,9 +1,9 @@
 <div class="container-fluid header">
   <div class="header-left">
-    <a href="#">
+    <a class="hand">
       Angular4-Admin
     </a>
-    <a href="#" style="float: right;" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'align-justify':'th-list'" size="lg"></fa></a>
+    <a class="hand float-right" style="float: right;" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'align-justify':'th-list'" size="lg"></fa></a>
   </div>
   <div class="header-right">
     <span class="pr-40">{{ loginService.getCurrentUser().username }} </span> <a href="#" (click)="logout()"><fa name="power-off" size="lg"></fa></a>
@@ -16,25 +16,25 @@
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li>
-        <a routerLink="/one"><fa name="dashboard"></fa>标题1</a>
+        <a  routerLink="/one"><fa name="dashboard"></fa>标题1</a>
       </li>
       <li>
         <a  routerLink="/two"><fa name="envelope"></fa>标题2</a>
       </li>
       <li>
-        <a href="#"><fa name="folder"></fa>标题3</a>
+        <a  routerLink="/three"><fa name="folder"></fa>标题3</a>
       </li>
       <li>
-        <a href="#"><fa name="laptop"></fa>标题4</a>
+        <a  routerLink="/four"><fa name="laptop"></fa>标题4</a>
       </li>
       <li>
-        <a href="#"><fa name="book"></fa>标题5</a>
+        <a  routerLink="/five"><fa name="book"></fa>标题5</a>
       </li>
       <li>
-        <a href="#"><fa name="th"></fa>标题6</a>
+        <a  routerLink="/six"><fa name="th"></fa>标题6</a>
       </li>
       <li>
-        <a href="#"><fa name="edit"></fa>标题7</a>
+        <a  routerLink="/seven"><fa name="edit"></fa>标题7</a>
       </li>
     </ul>
   </div>
