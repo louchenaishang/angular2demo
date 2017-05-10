@@ -1,18 +1,12 @@
 <div class="container-fluid header">
-  <div class="row">
-    <div class="col-sm-2 header-left">
-      <a href="#">
+  <div class="header-left">
+    <a href="#">
       Angular4-Admin
-      </a>
-    </div>
-    <div class="col-sm-8 header-middle">
-      <!--<a href="#" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'toggle-on':'toggle-off'" size="lg"></fa></a>-->
-      <a href="#" (click)="wrapperToggled=!wrapperToggled"><fa name="align-justify" size="lg"></fa></a>
-
-    </div>
-    <div class="col-sm-2 header-right">
-      <span class="pr-40">{{ loginService.getCurrentUser().username }} </span> <a href="#" (click)="logout()"><fa name="power-off" size="lg"></fa></a>
-    </div>
+    </a>
+    <a href="#" style="float: right;" (click)="wrapperToggled=!wrapperToggled"><fa [name]="wrapperToggled?'align-justify':'th-list'" size="lg"></fa></a>
+  </div>
+  <div class="header-right">
+    <span class="pr-40">{{ loginService.getCurrentUser().username }} </span> <a href="#" (click)="logout()"><fa name="power-off" size="lg"></fa></a>
   </div>
 </div>
 
