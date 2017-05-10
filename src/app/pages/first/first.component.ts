@@ -1,29 +1,22 @@
 import {Component, OnInit} from '@angular/core';
 
 import {Hero} from '../../models/hero.model';
-import {Todo} from "../../models/todo.model";
 import {HeroService} from "../../services/hero.service";
-import {TodoService} from "../../services/todo.service";
 
 @Component({
   selector: 'app-first',
   templateUrl: 'first.component.html',
   styleUrls: ['first.component.css'],
-  providers: [HeroService, TodoService]
+  providers: [HeroService]
 })
 
 export class FirstComponent implements OnInit {
 
-  constructor(private heroService: HeroService, private todoService: TodoService) {
+  constructor(private heroService: HeroService) {
   }
 
   ngOnInit() {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-
-    this.todoService.loadTodoListWithHeader().then(todoItems => {
-      this.todoItems = todoItems;
-    });
-
   }
 
   submitted = false;
@@ -33,12 +26,6 @@ export class FirstComponent implements OnInit {
   other:Hero= new Hero('2', 'aaa');
 
   heroes: Hero[] = [];
-
-  todoItems: Todo[];
-
-  date:string='';
-
-
 
   onSubmit() {
     this.hero = new Hero(this.other.age, this.other.name);

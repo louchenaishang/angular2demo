@@ -12,7 +12,7 @@ export class TodoService {
   constructor(private http: Http,private httpService: HttpService) {
   }
 
-  public loadTodoListWithHeader(): Promise<Todo[]> {
+  public loadTodoListWithWrapper(): Promise<Todo[]> {
     return this.httpService.get('/assets/mock/todo-list.json')
       .toPromise()
       .then(response => response.json() as Todo[])
